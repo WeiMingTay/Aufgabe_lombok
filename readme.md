@@ -25,7 +25,13 @@ Man sieht nicht was man schreibt
 ### Lombok @Builder & @With
 9. Schritt 1: Fügt zu allen Entitäten das Builder Pattern hinzu und erstellt in der main-Methode mit dem Builder weitere Objekte.
 10. Schritt 2: Nutzt die With-Annotation um das ändern von Eigenschaften zu erleichtern.
-
+## Bonus Aufgaben
+11. Finde herraus was die Lombok Annotation @Value macht und nutze diese für die Klasse Course.
+12. Erstelle einen Record University mit den folgenden Attributen: id, name, courses.
+13. Erstelle eine Klasse UniversityService und implementiere dort folgende Methoden:
+14. Schreibe eine Funktion um die Durschnittsnote eines Courses zu berechnen(Übergebt den Course als Parameter).
+15. Schreibe eine Funktion um die Durschschnittsnote der ganzen Universität zu berechnen(Übergebe ein Universitäts-Objekt als Parameter).
+16. Schreibe eine Funktion die aus einer Universität alle Schüler mit mindestens der Note 2/"Gut" raussucht und als Liste zurück gibt(Übergebt ein Universitäts-Objekt als Parameter).
 
 
 

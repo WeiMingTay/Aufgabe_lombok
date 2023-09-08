@@ -20,7 +20,8 @@ public class Main {
         Set<Student> allStudents = new HashSet<>();
         allStudents.add(student1);
         allStudents.add(student2);
-
+        Student student3 = student1.withGrade(2).withAddress("Brooklyn");
+        System.out.println(student3);
 
         Teacher teacher1 = new Teacher(987, "KRS-One", "Brooklyn");
         Teacher teacher2 = Teacher.builder()
@@ -28,12 +29,20 @@ public class Main {
                 .name("Rakim")
                 .subject("Lyricism")
                 .build();
-        System.out.println(teacher1+"\n"+teacher2);
+        System.out.println(teacher1 + "\n" + teacher2);
 
         Course course1 = new Course(
                 567,
                 "Lyricism",
-                teacher2, allStudents);
+                teacher2, student2);
+        Course course2 = Course.builder()
+                .id(568)
+                .name("New York")
+                .teacher(teacher1)
+                .student(student1)
+                .build();
+
+        System.out.println(course1+"\n"+course2);
 
 
 
